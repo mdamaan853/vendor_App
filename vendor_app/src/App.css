@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ----- icons   */
+
+.fa {
+  padding: 20px;
+  font-size: 25px;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: white;
+  color: #99BDC1;
+
+  width: 60px !important ;
+  height: "auto";
+  padding: 10px 10px;
+  border-radius: 6px;
+  border:1px solid #00ACB1;
+  
+}
+
+.fa-twitter {
+  background: white;
+  color: #99BDC1;
+  width: 60px !important ;
+  height: "auto";
+  padding: 10px 10px;
+  border-radius: 6px;
+  border:1px solid #00ACB1;
+}
+
+.fa-google {
+  background: white;
+  color: #99BDC1;
+  width: 60px !important ;
+  height: "auto";
+  padding: 10px 10px;
+  border-radius: 6px;
+  border:1px solid #00ACB1;
+}
+
+.PhoneInputInput {
+  flex: 1 1;
+  min-width: 0;
+  padding: 0px 40px;
+  border: none;
+}
+
+
+  .OtpInput{
+    /* border-left: 5px solid green ; */
+    width: auto;
+    text-align: center;
+}
+
+input {
+  overflow: visible;
+  width: 39px !important;
+}
+
+.form-control {
+  display: block;
+  width: 100% !important;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  width: -webkit-fill-available;
+}
+
+@media (max-width: 768px){
+  .smallImage {
+      display:none;
+  }
+  .font-sm{
+    font-size: 50px !important;
+  }
+  .small-nav-font{
+    font-size: 16px !important;
+    padding: 4px !important;
+  }
+  #hide-sm{
+    display: none;
+  }
+  #brand-sm{
+    font-size: 30px !important;
+    font-weight: bold !important;
+  }
+}
