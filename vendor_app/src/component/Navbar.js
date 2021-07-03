@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({name}) => {
   return (
     <>
       <div>
         <div className="container-fluid p-0">
-          <nav className="navbar navbar-expand-lg py-4 navbar-light bg-light ">
+          <nav className="navbar navbar-expand-lg py-4 b navbar-light bg-light ">
             <div className="container-fluid ">
               <a
                 className="navbar-brand py-2 d-flex align-items-center "
@@ -142,28 +142,41 @@ const Navbar = () => {
           <div className="" style={{ backgroundColor: "rgb(203 239 239)" }}>
             <div className="container">
               <div className="d-flex align-items-center justify-content-between">
-                <div className="">
+                <div className="d-flex">
                   <i
                     class="fa fa-arrow-left"
                     style={{
-                      padding: "5px",
+                      padding: "8px",
                       borderRadius: "10px",
                       border: "2px solid #838383",
                       color: "#838383",
+                      fontSize:"18px",
+                      // margin:"10px 20px"
                     }}
                   ></i>
-                  <span
+                  <div
                     id="hide-sm"
-                    className="small-nav-font"
+                    className="small-nav-font px-2 mx-2"
                     style={{
                       color: "#838383",
                       font: "normal normal medium 32px/48px Poppins",
                       fontSize: "26px",
                     }}
                   >
-                    Dashboard
-                  </span>
+                    {name}
+                  </div>
                 </div>
+                {/* <div class="">
+                <div class="input-group">
+  <div class="form-outline">
+    <input type="search" id="form1" class="form-control py-1" />
+  </div>
+  <button type="button" class="p-0 btn " style={{backgroundColor:"white",margin:"2px 0px"}}>
+  <i style={{fontSize:"20px" ,padding:"0px" }}class="fa">&#xf002;</i>
+  </button>
+</div>
+</div> */}
+
                 <div className="d-flex align-items-center py-2">
                   <div
                     className="bg-white ms-4 shadow"
@@ -171,7 +184,7 @@ const Navbar = () => {
                   >
                     <i
                       className="fa fa-history small-nav-font"
-                      style={{ fontSize: "22px", padding: "14px" }}
+                      style={{ fontSize: "22px", padding: "8px" }}
                     ></i>
                   </div>{" "}
                   <div
@@ -180,7 +193,7 @@ const Navbar = () => {
                   >
                     <i
                       className="fa fa-bell small-nav-font"
-                      style={{ fontSize: "22px", padding: "14px" }}
+                      style={{ fontSize: "22px", padding: "8px" }}
                     ></i>
                   </div>{" "}
                   <div
@@ -189,7 +202,7 @@ const Navbar = () => {
                   >
                     <i
                       className="fa fa-history small-nav-font"
-                      style={{ fontSize: "22px", padding: "14px" }}
+                      style={{ fontSize: "22px", padding: "8px" }}
                     ></i>
                   </div>
                   <div
@@ -198,7 +211,7 @@ const Navbar = () => {
                   >
                     <i
                       className="fa fa-history small-nav-font"
-                      style={{ fontSize: "22px", padding: "14px" }}
+                      style={{ fontSize: "22px", padding: "8px" }}
                     ></i>
                   </div>
                 </div>
