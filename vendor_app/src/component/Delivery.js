@@ -56,6 +56,8 @@ export default function Delivery() {
             </Tr>
           </Thead>
           <Tbody>
+            {[1,2,3,4].map((data)=>{
+              return(
             <Tr className="" style={{borderBottom:"5px solid #E2E2E2"}}>
               <Td className="col col-md col-sm col-xl">
                 <div className="d-flex flex-column ">
@@ -117,6 +119,7 @@ export default function Delivery() {
                     </div>
               </Td>
             </Tr>
+             )})}
           </Tbody>
         </Table>
       </div>
